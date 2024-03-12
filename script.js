@@ -54,10 +54,10 @@ const ramadan = [{
 ];
 
 function updateTime() {
-    i = date.getDate()-11;
+    i = (date.getDate())?date.getDate()-11:date.getDate()+21;
     ramadanNo.innerText = ramadan[i].no; 
     currentDay.innerText =  ramadan[i].day;
-    currentDate.date = ramadan[i].date;
+    currentDate.innerText = ramadan[i].date;
     sehriTime.innerText =  ramadan[i].sehri;
     iftarTime.innerText =  ramadan[i].iftar;
 }

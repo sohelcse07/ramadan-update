@@ -62,5 +62,14 @@ function updateTime() {
     iftarTime.innerText =  ramadan[i].iftar;
 }
 
+const bgImages = document.querySelector('body');
+let i = 1;
+
+setInterval(()=>{
+    bgImages.style.backgroundImage = `url('wallpaperflare.com_wallpaper (${i}).jpg')`;
+    (i>15)?i=0:i++;
+}, 5000);
+
 
 updateTime();
+
